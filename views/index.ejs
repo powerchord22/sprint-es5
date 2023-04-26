@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+   
+    <title>SONALERT</title>
+
+  
+    <%- include ('partials/header') %>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.124rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+     
+
+      
+    </style>
+
+
+</head>
+<body class="container-fluid">
+  
+  <%- include ('partials/navbar') %>
+  <%- include ('partials/modal_one') %>
+ <!-- _______________________________carousel__________________________ -->
+    <main>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+     <!-- _______indicador inferior carrusel_____    -->
+        <div class="carousel-indicators ">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+<div class="carousel-inner">
+            
+            <!-- _____primera foto_____ -->
+    <div class="carousel-item active">
+        <svg
+            class="bd-placeholder-img"
+            width="100%"
+            height="100%"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false">
+           
+            <image href="img/MODELAMIENTO.jpg" width="1500px" height="1000px" />
+          >
+        </svg>
+            
+            <div class="container ">
+              <div class="carousel-caption text-start">
+                <h1>Sonalert</h1>
+                <p>
+                  Buscando soluciones integrales a todo tipo de problemas de ruido.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Mas info</a>
+                </p>
+              </div>
+            </div>
+    </div>
+
+<!-- ______________________________________________________________________________ -->
+<div class="carousel-item">
+  <svg class="bd-placeholder-img" 
+  width="100%" 
+  height="100%"
+   xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true" 
+    preserveAspectRatio="xMidYMid slice" 
+    focusable="true">
+    <image href="img/MODELAMIENTO.JPG" width="1400px" height="1000px" />
+  </svg> 
+  
+  <div class="container">
+      <div class="carousel-caption text-end">
+          <h1 class="text-black">Mapas de ruido</h1>
+          <p class="bg-dark text-center">
+            Diagnosticar y cuantificar el problema de ruido ambiental donde resides.
+          </p>
+          <p>
+          <a class="btn btn-lg btn-primary btn btn-success"
+           href="https://ruido.mma.gob.cl/red-de-monitoreo-de-ruido/red-de-monitoreo-de-ruido-ambiental/" 
+           target="_blank">Mas Info</a>
+          </p>
+      </div>
+  </div>
+</div>
+
+<!-- ________________________________________________________________________________________________ -->
+
+
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" 
+            width="100%" 
+            height="100%"
+             xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true" 
+              preserveAspectRatio="xMidYMid slice" 
+              focusable="false">
+              <!-- <rect width="100%" height="100%" fill="#777"/> -->
+              <image href="img/ruidoambientevina.jpg" width="100%" height="100%" />
+            </svg> 
+            
+            <div class="container">
+                <div class="carousel-caption text-end">
+                    <h1 class="text-black">Informes y estadisticas.</h1>
+                    <p class="bg-dark text-center">
+                      Informe a la comunidad sobre promedios de ruido ambiente en tiempo real
+                    </p>
+                    <p>
+                    <a class="btn btn-lg btn-primary btn btn-success"
+                     href="https://ruido.mma.gob.cl/red-de-monitoreo-de-ruido/red-de-monitoreo-de-ruido-ambiental/" 
+                     target="_blank">Mas Info</a>
+                    </p>
+                </div>
+            </div>
+          </div>
+</div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide="next"
+                >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+     </div>
+
+<!-- <-- cards marketing info --> 
+
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: 140x140"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <image xlink:href="https://www.elpradopsicologos.es/storage/posts/March2021/Mindfulness-Para-Nin%CC%83os.jpg" x="0" y="0" width="100%" height="100%"/>
+         
+            </svg>
+
+            <h2>Mindfullnes</h2>
+            <p>
+              Nuestro equipo de especialistas podrá asesorarte sobre la practica de meditacion Mindfullnes y asi conectarte con el presente.
+            <p>
+              <a class="btn btn-secondary" href="#">View details &raquo;</a>
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: 140x140"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+               <image xlink:href="https://us.123rf.com/450wm/jemastock/jemastock1608/jemastock160801220/60546313-plana-persona-durmiendo-en-la-cama-de-dise%C3%B1o-icono-de-la-ilustraci%C3%B3n-del-vector.jpg" x="0" y="0" width="100%" height="100%"/>
+          
+            </svg>
+
+            <h2>Descanso Pleno</h2>
+            <p>
+              Aprende a mantener entornos optimos para priorizar una buena higiene de sueño 
+              evitando asi al temido "enemigo invicible" que es el ruido en niveles elevados.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#">View details &raquo;</a>
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+
+          <div class="col-lg-4">
+            <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: 140x140"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Control de ruidos molestos</title>
+              <!-- <rect width="100%" height="100%" fill="#777" /> -->
+              <image xlink:href="https://st2.depositphotos.com/1077687/10210/v/950/depositphotos_102106382-stock-illustration-noise-pollution-design.jpg" x="0" y="0" width="100%" height="100%"/>
+              
+              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+            </svg>
+
+            <h2>Ruidos Molestos</h2>
+            <p>
+               La mayoria del stress laboral en muchos trabajos esta ligada a una alta exposicion a niveles de presion sonora no adecuados
+            
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#">View details &raquo;</a>
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+
+        <!-- Comienzo descripciones-->
+
+        <hr class="featurette-divider" />
+
+     <!---------------------------- seccion 1 ---------------------------->
+      <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading">
+                Graves efectos secundarios la peligrosidad del 
+                <span class="text-muted">ruido excesivo.</span>
+              </h2>
+              <p class="lead">
+                Son muchos los problemas que acarrean exponerse a altos periodos de tiempo
+                en ambientes ruidosos. recibe asesoria sobre como planificar, minimizar y cuantificar los daños.
+              </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+              <svg
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                width="550"
+                height="500"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: 500x500"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee" />
+                <image
+                  xlink:href="https://blog.laminasyaceros.com/hs-fs/hubfs/CONTAMINACION%20ACUSTICA/LAMINAS%20Y%20ACEROS%20DA%C3%91OS%20FISIOLOGICOS%20POR%20RUIDO.jpg?width=541&name=LAMINAS%20Y%20ACEROS%20DA%C3%91OS%20FISIOLOGICOS%20POR%20RUIDO.jpg"
+                  width="100%"
+                  height="100%"
+                />
+                <text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+              </svg>
+          </div>
+       </div>
+
+       <hr class="featurette-divider" />
+
+     <!---------------------------- seccion 2 ---------------------------->
+       <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">
+            Monitorea tu audicion
+            <span class="text-muted">Prevencion y asesoria</span>
+          </h2>
+          <p class="lead">
+            la asesoría sobre el ruido ambiente puede ayudar a las personas a
+            comprender los efectos del ruido en su salud y a tomar medidas
+            para protegerse. Esto puede incluir consejos sobre la selección de
+            equipos de protección auditiva, la gestión de la exposición al
+            ruido en el lugar de trabajo y la implementación de medidas de
+            reducción de ruido en el hogar.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <svg
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+            width="800"
+            height="600"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee" />
+            <image
+              xlink:href="https://www.segurmaniazurekin.eus/a/2021/08/segurmania_ruido_afectar_salud_destacada.jpg"
+              width="100%"
+              height="100%"
+            />
+            <text x="50%" y="50%" fill="" dy=".3em"></text>
+          </svg>
+        </div>
+      </div>
+
+        <!-- separacion -->
+        <hr class="featurette-divider" />
+
+      <!---------------------------- seccion 3 ---------------------------->
+      <div class="row featurette">
+        <div class="col-md-5 order-md-1">
+          <svg
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+            width="550"
+            height="500"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+    
+            <image
+              xlink:href="img/Red-monitoreo-ruido.jpg"
+              width="100%"
+              height="100%"
+            />
+            <text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+          </svg>
+      </div>
+          <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading">
+                Monitoreos de ruido en tiempo real
+              
+              </h2>
+              <p class="lead">
+               Asesorate para utilizar nuestros dummies, los cuales emulan el comportamiento
+               del oido humano en tiempo real, logrando registros de niveles de presion sonora
+               reales para solicitar intervencion.
+              </p>
+          </div>
+        
+       </div>
+
+        <!-- separacion -->
+         <hr class="featurette-divider" />
+
+        <!-- /END THE FEATURETTES -->
+      </div>
+    
+      <%- include ('partials/footer') %>
+  
+
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

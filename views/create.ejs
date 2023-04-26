@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario de ingreso</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<style>
+    * {
+        background-color: whitesmoke;
+
+    }
+
+</style>
+<body class="container bg-light">
+    <% if(typeof alert != 'undefined') { %>
+        <% alert.forEach(function(error) { %>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <%= error.msg %>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+        <% }) %>
+    <% } %>
+    <div class="container mt-5">
+        <div class="card border-secondary">
+            <div class="card-header">Nuevo Registro</div>
+            <div class="card-body ">
+                <form action="/create" method="POST">
+                    <div class="mb-3">
+                        <label for="user" class="form-label text-black">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" tabindex="1" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="user" class="form-label text-black">Rut </label>
+                        <input type="text" class="form-control" id="rut" name="rut" tabindex="1" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="user" class="form-label text-black">Direccion</label>
+                        <input type="text" class="form-control" id="direccion" name="direccion" tabindex="1" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="user" class="form-label text-black">Fecha consulta</label>
+                        <input type="date" class="form-control" id="fecha" name="fecha" tabindex="1" required>
+                    </div>
+                    
+                   <div class="mb-3">
+                        <label for="user" class="form-label text-black">Asesoria</label>
+                        
+                      <select id="asesoria" name="asesoria" class="form-select bg-white" 
+                           aria-label="Default select example" tabindex="2" required >
+                            <option value="" selected disabled>Seleccione asesoria</option>
+                            <option value="Fonoaudiologica">Fonoaudiologica</option>
+                            <option value="Psicologica">Psicologica</option>
+                            <option value="Neurologica">Neurologica</option>
+                            <option value="Otorrino">Otorrino</option>
+                            <option value="Psicoacustica">Mindfullnes</option>
+                            <option value="Psicoacustica">Psicoacustica</option>
+                            <option value="Psiquiatra">Psiquiatra</option>
+                            <option value="Sonido y ruido">Sonido y ruido </option>
+                            <option value="Hipoacusia">Hipoacusia</option>
+                      </select>
+                   </div>
+                    
+                <button type="submit" class="btn btn-primary" tabindex="5">Guardar</button>
+                    <a href="/info" class="btn btn-secondary">Cancelar</a>
+                </form>
+                
+            </div>
+        </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  
+</body>
+</html>
